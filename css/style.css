@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.col-1{
+    width: 100%;
+    margin: 0 auto;
+}
+.col-2{
+    width: 50%;
+    margin: 0 auto;
+}
+.col-3{
+    width: 30%;
+    margin: 0 auto;
+}
+.btn{
+    background-color: #e76f51;
+    color: aliceblue;
+    padding: .5em 2em;
+    font-weight: 300;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
+   }
+   button.btn:hover{
+    background: white;
+    color: #e76f51;
+    border: 1px solid #e76f51;
+}
+   .headings{
+    position: relative;
+    
+   }
+   .heading {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+ 
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+h3.small-heading {
+    color: #e76f51;
+  
+}
+span{
+    color: #e76f51;
+}
+h3.small-heading::after{
+    content: "";
+    height: 1px;
+    width: 4em;
+    bottom: -8%;
+    left: 43%;
+    background-color: #e76f51;
+    position: absolute;
+}
+/*================================ Nav bar ============================*/
+.header{
+    background-color: #264653;
+    height: 10em;
+    display: flex;
+    padding: 0 9.5em;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  
+    
+}
+ul.navbar-list{
+    display: flex;
+    align-items: center;
+}
+ul.navbar-list li{
+    list-style: none;
+    padding: 0 2em;
+    
+   
+}
+.navbar-link:link,
+.navbar-link:visited{
+    display: inline-block;
+    transition: .2s ease-in-out;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: .9rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+.navbar-link:hover,
+.navbar-link:active{
+ color: #e76f51;
+}
+
+/* Mobile Nav*/
+.mobile-nav-button{
+    background: transparent;
+    cursor: pointer;
+    display: none;
+ 
+ }
+
+.mobile-nav-icon{
+   font-size: 2rem;
+    color: aliceblue;
+
+}
+
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+    z-index: 991;
+}
+.mobile-nav-icon[name="menu-outline"]{
+    
+    z-index: 992;
+}
+button.log-btn{
+    padding: 0.8em 2em;
+    font-size: 1rem;
+}
+
+/* ============================= Hero Section============================== */
+.hero{
+    background-color: #264653;
+    height: 83vh;
+    margin-bottom: 6em;
+}
+.hero-section{
+    display: flex;
+    align-items: center;
+   
+}
+.hero-text{
+    padding: 0 7em 0 0;
+}
+.hero-text h1{
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.hero-text p {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2em;
+    padding: 0 2em 0 0;
+    opacity: .8;
+}
+p.hero-p1{
+    font-size: .9rem;
+}
+
+button.hero-button{
+    margin-top: 1em;
+}
+
+/* ===================================Display==================== */
+.byke{
+    display: flex;
+    justify-content: center;
+}
+img.display-byke {
+    width: 25%;
+    margin: 13em auto 15em auto;
+    align-self: center;
+}
+
+/*========================================
+News section==================================*/
+.news-sections{
+ display: flex; 
+ margin: 11em 0 15em 0em;  
+ justify-content: center;
+ align-items: center;
+}
+.news-content{
+    padding: 2em 2em;
+    box-shadow: inset 0px 0px 4px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+}
+
+.news-section {
+    width: 33.3%;
+    border-radius: 5px;
+    margin: 0 1em;
+  
+}
+
+img.news-image {
+    width: 100%;
+}
+h2.news-heading {
+    font-size: 1.6rem;
+    padding: 1.3em 0 .5em 0;
+}
+
+p.news-text {
+    font-size: 1rem;
+    opacity: .6;
+    font-weight: 400;
+    padding: 0 0 2em 0;
+}
+button.news-button.btn {
+    padding: 01em 1.7em;
+}
+
+/* ============================== Testimonial============== */
+.testimonials{
+    display: flex;
+    margin: 27em 0 12em 0;
+    justify-content: center;
+    justify-content: space-between;
+}
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 5em 2em;
+    box-shadow: inset 0px 0px 4px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+}
+img.testimonial-image {
+    height: 15em;
+    margin: 0 0 3em 0;
+}
+p.test-text {
+    font-size: 1rem;
+    opacity: .6;
+    font-weight: 400;
+    text-align: center;
+}
+.rating{
+    display: flex;
+    margin: 1rem 0;
+}
+.star[name="star-outline"],
+.star[name="star-half-outline"]{
+    font-size: 1.5rem;
+   color: #e76f51;
+}
+p.name {
+    color: #23a6f0;
+    font-size: 1rem;
+}
+p.occupation {
+    color: gray;
+    font-size: .9rem;
+    font-weight: 400;
+    margin: 0.5em 0 0 0;
+}
+
+.faq{
+    display: flex;
+    margin: 25em 0 0 0;
+}
+img.faq-image{
+    max-width: 100%;
+    width: 40%;
+}
+
+/* ================================ Accordion========================= */
+.accordion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25em 0 0 0;
+}
+img.accor-image {
+    width: 40%;
+}
+
+
+/*Accordion*/
+span.acc-q{
+    color: #000000;
+    font-weight: 500;
+    opacity: .8;
+    text-align: left;
+}
+.title{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-decoration: underline 4px;
+}
+
+
+.questions-container {
+    width: 90%;
+    margin: 0 0 0 6em;
+}
+
+.question{
+    border-bottom: 1px solid #fff;
+   
+
+    
+}
+.question button{
+     width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 15px;
+     border:none;
+     outline: none; 
+    font-size: 22px;
+    color: rgb(58, 58, 58);
+    
+    font-weight: 700;
+    cursor: pointer;
+}
+.question p{
+    font-size: 22px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+.d-arrow{
+    transition: transform 0.5s ease-in ;
+    color: rgba(40, 40, 40, 0.84);
+
+}
+
+/*add this class when click*/
+.question p.show{
+    max-height: 200px; 
+    opacity: 1;
+    padding:0px 15px 30px 15px;
+    font-weight: 300;
+    opacity: .8;
+}
+.question button .d-arrow.rotate{
+    transform: rotate(180deg);
+}
+/*Accordion*/
+
+
+/* =========================== Footer ============================ */
+footer{
+    background: #0b0d17;
+    color: aliceblue;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5em 0 6em 0;
+    margin: 15em 0 0em 0;
+}
+.footer-text{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1rem;
+    display: inline-block;
+    padding: .7em .5em;
+    font-weight: 300;
+   
+}
+p.footer-p{
+    font-size: .9rem;
+    font-weight: 300;
+    margin: 0 0em 0 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+/* =============================Responsive==================================================== */
+@media (max-width: 768px){
+    .body{
+        overflow-x: hidden;
+    }
+    
+    .mobile-nav-button{
+        display: block;
+    }
+   
+
+    .navbar{
+
+        /* display: none; */
+        width: 100%;
+        height: 100vh;
+        background: #264653;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 990;
+/*TO GET THE TRANSITION*/  
+         transform: translateX(100%);
+         transition: all 0.3s ease-in;
+          opacity: 0;
+          visibility: hidden; 
+         pointer-events: none;
+        
+    }
+    .navbar-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-link:link,
+.navbar-link:visited{
+      
+    font-size: 1.5rem;
+    font-weight: 400;
+     padding: 0.5em;
+
+    }
+    .mobile-nav-icon{
+        position: absolute;
+        right: 80%;
+        bottom: 30%;
+     
+     }
+
+     
+
+     /*
+
+     */
+     .active .mobile-nav-button .mobile-nav-icon[name="close-outline" ]{
+        display: block;
+
+     }
+
+     .active .mobile-nav-button .mobile-nav-icon[name="menu-outline" ]{
+        display: none;
+
+     }
+
+     .navbar .logo{
+        margin-left: 3em;
+
+     }
+/* ==================== Heading=================== */
+     .heading {
+        position: absolute;
+        /* left: 50%;
+        transform: translateX(-50%); */
+        text-align: center;
+        width: 100%;
+    }  
+    h3.small-heading {
+        color: #e76f51;
+        font-size: 1rem;
+    }
+/* ==================== Button=================== */
+
+
+/*Login btn*/
+.login-btn{
+    position: absolute;
+    top: 4em;
+    right: 2em;
+    z-index: 992;
+    font-size: .5rem;
+    padding: .5em 2em;
+}
+button.log-btn.btn {
+    padding: .3em 1em;
+    font-size: 1rem;
+}
+.btn{
+    background-color: #e76f51;
+    color: aliceblue;
+    padding: .7em 2em;
+    font-weight: 300;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+   }
+/* ====================== Hero================================ */
+.hero{
+    height: 120vh;
+}
+.hero-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.hero-text{
+    padding: 5em 0 0 0;
+}
+.hero-text p {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 300;
+   
+}
+p.hero-p1{
+    font-size: .8rem;
+}
+.hero-image img{
+    width: 94%;
+    max-width: 100%;
+    margin: 4em auto 0 auto;
+}
+
+/* ========================== Display=================================
+*/
+.byke{
+    margin: 22em 0em 0em 0em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+img.display-byke {
+    width: 82%;
+    margin: 5em auto 10em auto;
+    align-self: center;
+}
+
+/*================== News Section =================*/
+.news-section {
+    width: 100%;
+    margin-bottom: 3em;
+    /* border-radius: 5px;
+    margin: 0 1em; */
+  
+}
+.news-sections{
+    display: flex; 
+    flex-direction: column;
+    margin: 11em 0em;  
+    justify-content: center;
+    align-items: center;
+   }
+
+/* ======================= Testimonial======================    */
+h2.test {
+    padding: 0 2.5em;
+}
+.testimonials{
+    flex-direction: column;
+    justify-content: space-between;
+}
+.testimonial{
+    width: 100%;
+    margin: 2em 0;
+}
+
+
+
+/* ========================Faq================================== */
+
+img.accor-image {
+    width: 100%;
+}
+.accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 29em 0 9em 0;
+}
+.questions-container {
+    width: 100%;
+    margin: 0 0 0 -1em;
+    
+}
+span.acc-q {
+    color: #000000;
+    text-align: left;
+}
+/* ==================== Footer============================ */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 8em 0 8em 0;
+    margin: 12em 0 0 0;
+}
+.footer-image {
+    
+    margin: 4em 0em 0 -1em;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*nav bar a active class present thakle 
+     kalo  bg+ menu(mobile menu ) show lorbe*/
+
+     .active .navbar{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+     }
+    
